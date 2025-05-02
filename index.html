@@ -1,0 +1,41 @@
+<html>
+<head>
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="home">
+  <!-- NAV BAR -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="stocks.html">Stocks</a></li>
+      <li><a href="dogs.html">Dogs</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Welcome!</h1>
+
+    <!-- Quote placeholder -->
+    <div id="quote">Loading quote…</div>
+
+    <!-- Navigation Buttons -->
+    <button class="btn" onclick="location.href='stocks.html'">Stocks</button>
+    <button class="btn" onclick="location.href='dogs.html'">Dogs</button>
+  </div>
+
+  <!-- Audio Controls Div -->
+  <div id="audio-controls">
+    <p>Voice commands: “Hello”, “Change the color to <color>”, “Navigate to <page>”</p>
+    <button id="start-audio" class="btn">Turn On Audio</button>
+    <button id="stop-audio" class="btn">Turn Off Audio</button>
+  </div>
+
+  <!-- LIBRARIES -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+
+  <!-- PAGE SCRIPTS -->
+  <script src="audio.js"></script>
+  <script src="home.js"></script>
+</body>
+</html>
