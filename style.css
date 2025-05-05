@@ -1,0 +1,130 @@
+/* ─── RESET & BASE ─── */
+/* * { margin: 0; padding: 0; box-sizing: border-box; } */
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  background: #FCE8D5;            /* pale peach */
+  color: #222;
+}
+
+/* ─── NAV BAR ─── */
+nav {
+  background: #C64E41; 
+
+}
+
+#main-nav {
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem 2rem;
+  list-style: none;
+}
+nav li + li::before {
+  content: " · ";                 /* middle dot */
+  color: #212070;                 /* royal blue */
+  padding: 0 0.5rem;
+ 
+}
+nav a {
+  color: #212070;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav :hover {
+  color: #fff;
+}
+
+/* ─── BUTTONS ─── */
+.btn-custom {
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  background: #E72C44;            /* bright red */
+  border-right: 8px solid #46EEFF;/* cyan stripe */
+  clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%, 0% 10%);
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-align: center;
+  transition: opacity .2s;
+}
+.btn-custom:hover {
+  opacity: 0.8;
+}
+
+/* ─── QUOTE BOX ─── */
+.quote-box {
+  background: #F1F1F1;
+  border: 2px solid #ccc;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+}
+.quote-box h2 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.quote-box blockquote {
+  font-style: italic;
+  color: #555;
+  text-align: center;
+}
+
+/* ─── AUDIO CONTROLS ─── */
+#audio-controls {
+  background: #377F64;            /* forest green */
+  color: #fff;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+#audio-controls h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+#audio-controls ul {
+  text-align: left;
+  list-style: disc inside;
+  margin: 0 auto 1.5rem;
+  max-width: 600px;
+  line-height: 1.4;
+}
+#audio-controls button {
+  background: #fff;
+  color: #000;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  transition: opacity .2s;
+}
+#audio-controls button:hover {
+  opacity: 0.8;
+}
+
+/* ─── CONTAINERS ─── */
+#containers {
+  padding: 1rem;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.container {
+  padding: 1rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+#get-data {
+  background: lawngreen;
+  border-radius: 10px;
+}
