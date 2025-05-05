@@ -4,38 +4,52 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body id="home">
-  <!-- NAV BAR -->
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="stocks.html">Stocks</a></li>
-      <li><a href="dogs.html">Dogs</a></li>
-    </ul>
-  </nav>
+  <h1>INST377 - Activities</h1>
+    <nav id = 'main-nav'>
+      <ul >
+        <li><a href="index.html">Home</a></li>
+        <li><a href="stocks.html">Stocks</a></li>
+        <li><a href="dogs.html">Dogs</a></li>
+      </ul>
+    </nav>
 
-  <div class="container">
-    <h1>Welcome!</h1>
+    <h1>These are some different activities we can try!</h1>
 
-    <!-- Quote placeholder -->
-    <div id="quote">Loading quote…</div>
+    <div class="container">  
+      <!-- NAV BUTTONS -->
+      <button class="btn-custom" onclick="location.href='stocks.html'">Stocks</button>
+      <button class="btn-custom" onclick="location.href='dogs.html'">Dogs</button>
 
-    <!-- Navigation Buttons -->
-    <button class="btn" onclick="location.href='stocks.html'">Stocks</button>
-    <button class="btn" onclick="location.href='dogs.html'">Dogs</button>
-  </div>
+  
 
-  <!-- Audio Controls Div -->
-  <div id="audio-controls">
-    <p>Voice commands: “Hello”, “Change the color to <color>”, “Navigate to <page>”</p>
-    <button id="start-audio" class="btn">Turn On Audio</button>
-    <button id="stop-audio" class="btn">Turn Off Audio</button>
-  </div>
-
-  <!-- LIBRARIES -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
-
-  <!-- PAGE SCRIPTS -->
-  <script src="audio.js"></script>
-  <script src="home.js"></script>
-</body>
+      <!-- QUOTE BOX -->
+      <div class="quote-box">
+        <h2>Quote of the Day</h2>
+        <blockquote id="quote">
+          Loading…
+        </blockquote>
+      </div>
+    </div>
+  
+    <!-- AUDIO CONTROLS -->
+    <div id="audio-controls">
+      <h2>In this web page there are options to Navigate using Audio!</h2>
+      <ul>
+        <li>Navigate to a Different Page  
+          <ul><li>Say: <strong>Navigate to &lt;page&gt;</strong></li></ul>
+        </li>
+        <li>Change the Page Color  
+          <ul><li>Say: <strong>Change the color to &lt;color&gt;</strong></li></ul>
+        </li>
+        <li>Say Hello Back to you!  
+          <ul><li>Say: <strong>Hello</strong></li></ul>
+        </li>
+      </ul>
+      <button id="start-audio">Turn On Listening</button>
+      <button id="stop-audio">Turn Off Listening</button>
+    </div>
+  
+    <!-- … your scripts … -->
+  </body>
+  
 </html>

@@ -1,3 +1,4 @@
+<script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
 if (annyang) {
     const cmds = {
       'hello': () => alert('Hello World'),

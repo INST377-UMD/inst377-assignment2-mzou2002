@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
   <title>Stocks</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body id="stocks">
+  <h1>INST377 - Stocks</h1>
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -15,17 +14,18 @@
   </nav>
 
   <div class="container">
-    <h1>Stock Lookup</h1>
+    <h1>Let's chart some stocks!</h1>
 
     <div>
-      <label for="ticker">Ticker:</label>
-      <input type="text" id="ticker" placeholder="e.g. MSFT">
+      <input type="text" id="ticker">
+      <br>
       <label for="range">Days:</label>
       <select id="range">
         <option value="30">30</option>
         <option value="60">60</option>
         <option value="90">90</option>
       </select>
+      <br>
       <button id="get-data" class="btn">Get Chart</button>
     </div>
 

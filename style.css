@@ -1,68 +1,124 @@
-/* ---------- RESET & BASE ---------- */
-/* * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: sans-serif; line-height: 1.5; } */
-
-/* ---------- NAVIGATION ---------- */
-nav { background: #333; }
-nav ul { display: flex; list-style: none; }
-nav li { flex: 1; text-align: center; }
-nav a {
-  display: block;
-  padding: 1rem;
-  color: #fff;
-  text-decoration: none;
-  transition: background .2s;
+/* ─── RESET & BASE ─── */
+/* * { margin: 0; padding: 0; box-sizing: border-box; } */
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  background: #FCE8D5;            /* pale peach */
+  color: #222;
 }
-nav li:hover a { background: #555; }
 
-/* ---------- BUTTONS ---------- */
-.btn {
-  display: inline-block;
-  padding: .75rem 1.5rem;
-  margin: .5rem;
-  border: none;
-  border-radius: .5rem;
-  background: #007bff;
-  color: #fff;
-  cursor: pointer;
-  transition: background .2s;
+/* ─── NAV BAR ─── */
+nav {
+  background: #C64E41; 
 }
-.btn:hover { background: #0056b3; }
 
-/* ---------- AUDIO CONTROLS ---------- */
-#audio-controls {
-  border-top: 1px solid #ccc;
-  padding: 1rem;
+nav li:hover {
   text-align: center;
-  margin-top: 2rem;
 }
-#audio-controls p { margin-bottom: .5rem; }
-#audio-controls button { margin: 0 .5rem; }
-
-/* ---------- PAGE CONTAINERS ---------- */
-.container { padding: 1rem; max-width: 800px; margin: auto; }
-
-/* Page‑specific overrides if needed */
-#quote { font-style: italic; margin: 1rem 0; }
-
-/* Stocks table */
-#reddit-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 1rem;
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem 2rem;
+  list-style: none;
 }
-#reddit-table th, #reddit-table td {
-  border: 1px solid #ddd;
-  padding: .5rem;
+nav li + li::before {
+  content: " · ";                 /* middle dot */
+  color: #212070;                 /* royal blue */
+  padding: 0 0.5rem;
+ 
+}
+nav a {
+  color: #212070;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
+nav a :hover {
+  color: #fff;
+  text-align: center;
+}
+
+/* ─── BUTTONS ─── */
+.btn-custom {
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  background: #E72C44;            /* bright red */
+  border-right: 8px solid #46EEFF;/* cyan stripe */
+  clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%, 0% 10%);
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-align: center;
+  transition: opacity .2s;
+}
+.btn-custom:hover {
+  opacity: 0.8;
+}
+
+/* ─── QUOTE BOX ─── */
+.quote-box {
+  background: #F1F1F1;
+  border: 2px solid #ccc;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+}
+.quote-box h2 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.quote-box blockquote {
+  font-style: italic;
+  color: #555;
+  text-align: center;
+}
+
+/* ─── AUDIO CONTROLS ─── */
+#audio-controls {
+  background: #377F64;            /* forest green */
+  color: #fff;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+#audio-controls h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+#audio-controls ul {
   text-align: left;
+  list-style: disc inside;
+  margin: 0 auto 1.5rem;
+  max-width: 600px;
+  line-height: 1.4;
 }
-#reddit-table th { background: #f4f4f4; }
+#audio-controls button {
+  background: #fff;
+  color: #000;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  transition: opacity .2s;
+}
+#audio-controls button:hover {
+  opacity: 0.8;
+}
 
-/* Breed info box */
-#breed-info {
-  border: 1px solid #ddd;
+/* ─── CONTAINERS ─── */
+.container {
   padding: 1rem;
-  margin-top: 1rem;
-  border-radius: .5rem;
-  background: #fafafa;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+#get-data {
+  background: lawngreen;
+  border-radius: 10px;
 }
