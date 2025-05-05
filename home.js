@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  fetch('https://zenquotes.io/')
+  fetch('https://zenquotes.io/api/[random]/[key]')
     .then(r => r.json())
     .then(data => {
       document.getElementById('quote').textContent =

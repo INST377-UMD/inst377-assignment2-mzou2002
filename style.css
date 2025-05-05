@@ -10,11 +10,13 @@ body {
 /* ─── NAV BAR ─── */
 nav {
   background: #C64E41; 
+
 }
 
-nav li:hover {
+#main-nav {
   text-align: center;
 }
+
 nav ul {
   display: flex;
   justify-content: flex-end;
@@ -31,11 +33,9 @@ nav a {
   color: #212070;
   text-decoration: none;
   font-weight: bold;
-  text-align: center;
 }
-nav a :hover {
+nav :hover {
   color: #fff;
-  text-align: center;
 }
 
 /* ─── BUTTONS ─── */
@@ -111,11 +111,17 @@ nav a :hover {
 }
 
 /* ─── CONTAINERS ─── */
-.container {
+#containers {
   padding: 1rem;
   max-width: 900px;
   margin: auto;
   text-align: center;
+}
+
+.container {
+  padding: 1rem;
+  max-width: 900px;
+  margin: auto;
 }
 
 #get-data {
